@@ -1,69 +1,50 @@
 # Mobile Security & Privacy Lab
 
-**Practical iOS and Android privacy education backed by reproducible security observations.**
+**Hands-on Apple device security, data privacy, and GRC portfolio.**
 
-> Status: public portfolio starter · First lab: ready to execute · Last reviewed: 2026-11-09
+> Active learning portfolio · Primary platforms: iOS, iPadOS, macOS · Updated 2026-11-09
 
-This project helps everyday phone users understand privacy settings while demonstrating a structured, evidence-based approach to mobile security review. It covers **consumer guidance**, **hands-on device labs**, and **risk/control analysis** relevant to cybersecurity, privacy, and GRC.
+This independent project documents practical security and privacy assessments using personally controlled Apple devices. The goal is to teach everyday users while demonstrating a repeatable security-assessment method: **scope → test → observe → evaluate risk → recommend control → document limitations**.
+
+Long-term tracks include Apple enterprise security, BYOD, identity and access management, privacy governance, and cloud security. Android remains optional, not a requirement.
 
 ## Start here
 
-1. Read [Lab 01: App permission audit](labs/01-app-permission-audit.md).
-2. Run the steps on a **personal test device** with a non-sensitive test app.
-3. Record results in a copy of [the observation template](templates/lab-observation.md).
-4. Replace screenshot placeholders only with **redacted images you captured**.
-5. Publish findings as observations, not claims that one platform is inherently secure or insecure.
+1. Run [Lab 01: iOS App Permissions](labs/01-ios-app-permissions.md) on a personal device.
+2. Record real findings using [the observation template](templates/lab-observation.md).
+3. Complete [a risk/control record](templates/risk-control-record.md).
+4. Publish **redacted** screenshots and evidence only after checking for private information.
 
-## What you'll learn
+## Portfolio tracks
 
-| Track | Consumer question | Technical evidence |
+| Track | Example work | Evidence |
 |---|---|---|
-| Permissions | Which apps can use my camera, microphone, or location? | Permission inventory and observed controls |
-| Privacy visibility | Can I see recent data access? | Platform-specific dashboard/report observations |
-| Device hardening | Which protections should I enable? | Reproducible configuration checklist |
-| Mobile threats | What might phishing or risky apps do? | Threat-model notes and safe demonstrations |
-| Governance | How should an organization manage device risk? | Risk, control, evidence, and residual-risk mapping |
+| iOS security | Permissions, updates, authentication, recovery | Device observations and screenshots |
+| iPadOS security | Tablet privacy settings and hardening | Reproducible device notes |
+| Apple enterprise security | Managed devices, BYOD, enrollment | Architecture and control analysis |
+| Privacy & GRC | Data risks, control mapping, testing | Risk register and evidence records |
+| Cloud security | AWS/Azure identity and data protection | Authorized lab notes |
+| Optional Android | Cross-platform comparisons | Separate, clearly scoped tests |
 
-## Repository map
+## Repository contents
 
-```text
-mobile-security-privacy-lab/
-├── README.md
-├── LICENSE
-├── CONTRIBUTING.md
-├── SECURITY.md
-├── .gitignore
-├── roadmap/6-week-plan.md
-├── labs/01-app-permission-audit.md
-├── guides/phone-privacy-quickstart.md
-├── templates/lab-observation.md
-├── templates/risk-control-record.md
-└── references/sources.md
-```
+- `labs/01-ios-app-permissions.md` — first active hands-on iPhone lab.
+- `labs/01-app-permission-audit.md` — optional earlier cross-platform procedure.
+- `roadmap/6-week-plan.md` — six-week Apple security/GRC learning path.
+- `guides/phone-privacy-quickstart.md` — consumer guidance.
+- `templates/` — reproducible observation and risk/control formats.
+- `references/sources.md` — official documentation.
 
-## Method
+## Method and ethical boundaries
 
-Each lab separates **vendor-documented behavior**, **direct observation**, **risk interpretation**, and **recommendation**. Capture device model, OS version, test date, and configuration in a sanitized observation record. UI labels may vary across versions or manufacturers.
+Only test systems, accounts, apps and devices you own or are explicitly authorized to assess. Keep work devices, employer applications, and confidential information out of the repository. Never publish account names, device identifiers, serial numbers, phone numbers, GPS coordinates, credentials, MFA codes, notification contents, or unredacted app inventories.
 
-The NIST guidance in this repository discusses **enterprise mobile device management**; it is not a certification or endorsement of these consumer settings. OWASP MASVS is primarily a **mobile application security verification** standard, not a universal checklist for handset settings.
+Distinguish **documented vendor behavior**, **direct observation**, and **your inference**. Empty templates are not completed assessments. User-facing settings checks do not prove an app is secure or demonstrate compliance with a standard.
 
-## Ethical boundaries
+## Standards context
 
-- Only inspect devices, apps, accounts, and networks you own or are authorized to test.
-- No credential harvesting, malware deployment, unauthorized interception, or third-party account testing.
-- Do not publish account names, device identifiers, phone numbers, GPS coordinates, notification contents, or access tokens.
-- Keep professional work devices, employer data, and confidential policies completely out of this repository.
-- Screenshots and lab results are **not yet supplied**. Do not represent the templates as completed testing.
+- [Apple Platform Security](https://support.apple.com/guide/security/welcome/web) covers Apple security architecture.
+- [NIST SP 800-124 Rev. 2](https://csrc.nist.gov/pubs/sp/800/124/r2/final) covers enterprise mobile-device management and risk.
+- [OWASP MASVS](https://mas.owasp.org/MASVS/) is about mobile **application** security verification, not certification of an individual's device settings.
 
-## Six-week publishing path
-
-See [the roadmap](roadmap/6-week-plan.md) for weekly deliverables and acceptance criteria.
-
-## Source material
-
-Official Apple and Google support documentation, [NIST SP 800-124 Rev. 2](https://csrc.nist.gov/pubs/sp/800/124/r2/final), and [OWASP MASVS](https://mas.owasp.org/MASVS/) are listed in [references](references/sources.md). Product interfaces change; recheck official documentation before each update.
-
-## Portfolio note
-
-This is an independent educational project, not affiliated with Apple, Google, Samsung, NIST, OWASP, or any employer. Statements about risks are educational interpretations unless a reproducible observation is attached.
-
+This is an independent educational project, not affiliated with device vendors, standards bodies, or any employer.

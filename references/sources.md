@@ -4,6 +4,7 @@ Checked for this starter release on **2026-11-09**.
 
 | Source | What it supports | Scope caution |
 |---|---|---|
+| [Apple Platform Security](https://support.apple.com/guide/security/welcome/web) | Apple platform architecture | Not proof of a particular device configuration |
 | [Apple — Control what you share](https://support.apple.com/en-euro/guide/iphone/iph6e7d349d1/ios) | iPhone permission and privacy settings | UI differs by iOS version |
 | [Apple — App access controls](https://support.apple.com/en-mide/guide/iphone/iph251e92810/ios) | App permissions and App Privacy Report | Does not establish malicious behavior |
 | [Google — Android app permissions](https://support.google.com/android/answer/9431959) | Android permission management | OEM UI variations expected |

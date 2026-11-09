@@ -1,4 +1,4 @@
-# Five-minute phone privacy check
+# Five-minute phone privacy check (iPhone first)
 
 **For nontechnical phone owners.** You can review these settings without buying an app or installing a security tool.
 
@@ -15,7 +15,7 @@
 | Settings → Privacy & Security → choose permission | Settings → Security and privacy → Privacy → Permission manager, or search Settings |
 | Settings → Privacy & Security → App Privacy Report | Privacy Dashboard (location varies by software version) |
 
-Menu names may change. For step-by-step details and official links, read [Lab 01](../labs/01-app-permission-audit.md).
+Menu names may change. For the primary iPhone walkthrough, read [iOS Lab 01](../labs/01-ios-app-permissions.md). The [Android comparison lab](../labs/01-app-permission-audit.md) remains optional.
 
 **Remember:** A permission being enabled is not, by itself, evidence of an attack. Review permissions based on actual app needs.
 

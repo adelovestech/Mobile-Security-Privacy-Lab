@@ -1,25 +1,23 @@
-# Six-week publishing roadmap
+# Six-week Apple security, privacy & GRC roadmap
 
-Suggested cadence: **one public update per week**, 2–3 focused sessions of 30–45 minutes. Each week ends with one clear artifact—not a promise of an exhaustive security assessment.
+**Cadence:** one useful GitHub artifact per week. Aim for two or three 30–45-minute sessions that fit around work and family obligations.
 
-| Week | Deliverable | Evidence to capture | Definition of done |
+| Week | Project | Publish | Done when |
 |---|---|---|---|
-| 1 | Permission audit: iOS vs Android | Settings paths; redacted captures; versions | Complete Lab 01 and at least one observation per platform |
-| 2 | Privacy visibility guide | App Privacy Report / Privacy Dashboard observations | Distinguish access history from permission grants |
-| 3 | Phone hardening checklist | Screenshots of test-device controls | Consumer steps, caveats, and rollback steps |
-| 4 | Mobile phishing threat model | Fictional examples and attack-path diagram | No live phishing or credential collection |
-| 5 | Update and app-source hygiene | Patch status and app-source settings on test devices | Compare evidence, not unsupported security rankings |
-| 6 | Risk/control crosswalk | Risk register, control owners, evidence, gaps | Explain enterprise relevance and scope limitations |
+| 1 | iOS app permissions | Camera, microphone, location, and tracking assessment | Redacted observations and risk/control record |
+| 2 | iPhone hardening | Lock screen, updates, account protection, backup/recovery checklist | Actual device observations with limitations |
+| 3 | iPadOS privacy | Tablet settings assessment | iPadOS-specific notes and screenshots |
+| 4 | Enterprise Apple/BYOD | Personal vs managed device threat model | Data flow and documented control table (no employer systems) |
+| 5 | Privacy & GRC | Mobile data-access risk register | Scenario, evidence, owner, mitigation and residual risk |
+| 6 | Mobile identity/cloud | Mobile authentication and AWS/Azure IAM concept study | Source-linked architecture note and authorized lab evidence |
 
-## Publication workflow
+## Weekly publication process
 
-1. Create a GitHub issue named `Week N: topic` with 3–5 acceptance checks.
-2. Revisit linked official sources; note date reviewed.
-3. Conduct the lab on personally controlled devices and save **redacted** evidence.
-4. Make a feature branch, update the Markdown and evidence, and open a pull request.
-5. Self-review for reproducibility, privacy leaks, and unverified claims; then merge.
+1. Open a GitHub issue for one testable question.
+2. Recheck official documentation and note the date.
+3. Test only personal or authorized systems with synthetic data.
+4. Record what happened, redact evidence, and distinguish observation from inference.
+5. Complete the relevant template and record what the test **cannot** prove.
+6. Commit the result with a clear summary.
 
-## Suggested later topics
-
-MFA and passkeys; backup and recovery; lost-device response; app store data disclosures; enterprise BYOD trade-offs. Keep separate coverage for device settings and application security testing.
-
+This is an ongoing portfolio. Add further Apple, privacy governance, and cloud security studies after six weeks. Android testing can be added later when a defined project justifies it.
